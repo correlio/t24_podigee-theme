@@ -6,6 +6,11 @@
   </div>
 
   <div class="sidebar-block">
+    <h3>Jetzt hören</h3>
+    {% include 'subscribe-links.html' %}
+  </div>
+
+  <div class="sidebar-block">
     <h3>{{'subscribe' | t}}</h3>
     {% if podcast.subscribe_button_data.configuration.enabled %}
       {{podcast.subscribe_button}}

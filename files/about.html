@@ -7,6 +7,10 @@
 <h2>{{'authors' | t }}</h2>
 <p>{{ podcast.authors }}</p>
 
+<h2>Jetzt hören</h2>
+
+{% include 'subscribe-links.html' %}
+
 <h2>{{'subscribe' | t}}</h2>
 
 {% if podcast.subscribe_button_data.configuration.enabled %}

@@ -302,6 +302,39 @@ h3 {
   margin-bottom: 8px;
 }
 
+.listen-on {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.listen-on-link {
+  border-radius: 6px;
+  color: #fff !important;
+  display: block;
+  font-weight: 600;
+  padding: 10px 14px;
+  text-align: center;
+  text-decoration: none !important;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.listen-on-link:hover {
+  opacity: 0.85;
+}
+
+.listen-on-apple {
+  background: #000000;
+}
+
+.listen-on-spotify {
+  background: #1db954;
+}
+
+.listen-on-amazon {
+  background: #00a8e1;
+}
+
 .section-sidebar .follow li i {
   margin-right: 6px;
 }
