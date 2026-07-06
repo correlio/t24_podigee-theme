@@ -1,29 +1,60 @@
-# tankpool24 – Podigee Webplayer Theme
+# tankpool24 – Podigee Themes
 
-Custom Podigee webplayer theme for den tankpool24-Podcast, gebaut auf Basis des
+Dieses Repository enthält zwei getrennte tankpool24-Themes für zwei unterschiedliche
+Podigee-Funktionen. Farben und Formsprache orientieren sich an der tankpool24-Marke
+(`#e53533` Rot, dezent abgerundete Ecken, klare Sans-Serif-Typografie) –
+siehe [tankpool24.eu](https://www.tankpool24.eu/).
+
+## `files/` – Blog-/Website-Theme (Git-Import)
+
+Das komplette Podigee-Podcast-Website-Layout (Startseite, Episodenseite, Archiv,
+Über-uns-Seite, Sidebar, Kommentare, Transkript). Wird über **"Repository URL (git)"**
+in den Podigee-Theme-Einstellungen importiert.
+
+**Wichtig:** Podigee erwartet dafür zwingend einen Ordner namens `files/` im
+Root-Verzeichnis des Repos – nur `.html`- und `.css`-Dateien darin werden importiert
+(max. 50 Dateien). Beim Import die **HTTPS**-Repo-URL verwenden:
+
+```
+https://github.com/correlio/t24_podigee-theme.git
+```
+
+Mehr Details: [Podigee-Hilfe: Importing Themes from Git Repos](https://help.podigee.com/article/160-importing-themes-from-git-repos).
+
+Struktur:
+
+- `files/layout.html` – Grundgerüst (Header, Navigation, Sidebar-Einbindung)
+- `files/index.html` – Episodenliste (Startseite)
+- `files/show.html` – einzelne Episodenseite
+- `files/archive.html` – Episodenarchiv
+- `files/about.html` – Über-uns-Seite
+- `files/sidebar.html` – Sidebar (Beschreibung, Abo-Links, Social Links)
+- `files/navigation.html` – Hauptnavigation
+- `files/comments.html` – Kommentarbereich
+- `files/transcript.html` – Transkript-Seite
+- `files/application.css` – Styling mit tankpool24-Farben (Variablen in `:root`)
+
+Nach einem erneuten Import werden alle vorhandenen Theme-Dateien in Podigee gelöscht
+und durch den aktuellen Stand des Repos ersetzt.
+
+## `webplayer/` – Custom Webplayer-Theme (manuelle URL-Konfiguration)
+
+Das eingebettete Audio-Player-Widget, gebaut auf Basis des
 [podigee-podcast-player-theme-sdk](https://github.com/podigee/podigee-podcast-player-theme-sdk).
+Dieses Theme wird **nicht** per Git importiert, sondern die beiden Datei-URLs (CSS + HTML)
+werden manuell eingetragen.
 
-Farben und Formsprache orientieren sich an der tankpool24-Marke
-(`#e53533` Rot, dezent abgerundete Ecken statt der verspielteren
-15px-Rundungen des Standard-Themes) – siehe [tankpool24.eu](https://www.tankpool24.eu/).
-
-## Struktur
-
-- `themes/tankpool24/index.html` – Player-Markup (unverändert vom Standard-Theme)
-- `themes/tankpool24/index.css` – Styling mit tankpool24-Farben (Variablen in `:root`)
-- `podcast.json` – Beispiel-/Vorschaudaten für die lokale Entwicklung (Platzhalter, siehe unten)
-- `index.html` – lokale Vorschauseite, bindet den Player per Script-Tag ein
-
-## Lokale Vorschau
+### Lokale Vorschau
 
 ```bash
+cd webplayer
 npm install
 npm start
 ```
 
-Anschließend `http://0.0.0.0:8080` im Browser öffnen.
+Anschließend `http://localhost:8080` im Browser öffnen.
 
-Passe bei Bedarf die Farben in `themes/tankpool24/index.css` unter `:root` an:
+Farben lassen sich in `webplayer/theme/index.css` unter `:root` anpassen:
 
 ```css
 :root {
@@ -36,15 +67,13 @@ Passe bei Bedarf die Farben in `themes/tankpool24/index.css` unter `:root` an:
 }
 ```
 
-**Hinweis:** `podcast.json` enthält aktuell Platzhalter-Metadaten sowie Demo-Mediendateien
-von Podigee (nur für die lokale Vorschau, damit der Player im Browser funktioniert).
-Sobald der Podcast in Podigee angelegt ist, bitte durch die echten Episoden-/Podcast-Daten
-ersetzen (nur relevant für die lokale Vorschau – im Livebetrieb liefert Podigee diese Daten
-automatisch).
+**Hinweis:** `webplayer/podcast.json` enthält Platzhalter-Metadaten sowie Demo-Mediendateien
+von Podigee (nur für die lokale Vorschau, damit der Player im Browser funktioniert) –
+im Livebetrieb liefert Podigee diese Daten automatisch.
 
-## Live schalten
+### Live schalten
 
-1. `themes/tankpool24/index.html` und `themes/tankpool24/index.css` auf einen eigenen,
+1. `webplayer/theme/index.html` und `webplayer/theme/index.css` auf einen eigenen,
    CORS-fähigen Webspace hochladen (Header `Access-Control-Allow-Origin: *` oder
    `https://player.podigee-cdn.net`).
 2. In den Podcast-Einstellungen bei Podigee unter "Web-Player" → erweiterte Einstellungen

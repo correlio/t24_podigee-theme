@@ -1,0 +1,21 @@
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="top-image">
+      <img alt="{{podcast.title}}" src="{{blog.header_image}}">
+    </div>
+    <div class="title">
+      <h1>{{podcast.title}}</h1>
+      {% if podcast.subtitle != blank %}
+        <p class="subtitle">{{podcast.subtitle}}</p>
+      {% endif %}
+    </div>
+  </div>
+  {% include 'navigation.html' %}
+</header>
+
+<div class="site-body">
+  <div class="section-main">
+    {{page_content}}
+  </div>
+  {% include 'sidebar.html' %}
+</div>

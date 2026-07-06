@@ -65,7 +65,7 @@
     "startPanel": null,
     "whitelabelEnabled": false,
     "themeVersion": 2,
-    "themeCss": "http://localhost:8080/themes/tankpool24/index.css",
-    "themeHtml": "http://localhost:8080/themes/tankpool24/index.html"
+    "themeCss": "http://localhost:8080/theme/index.css",
+    "themeHtml": "http://localhost:8080/theme/index.html"
   }
 }
