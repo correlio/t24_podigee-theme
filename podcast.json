@@ -1,0 +1,71 @@
+{
+  "episode": {
+    "media": {
+      "mp3": "https://main.podigee-cdn.net/media/podcast_53990_power_to_the_pdcst_pdcst_starten_monetarisieren_und_zum_erfolg_fuhren_episode_812219_003_diese_4_pdcst_formate_sind_die_haufigsten_welches_wahlst_du.mp3?v=1657210689&source=webplayer",
+      "aac": "https://main.podigee-cdn.net/media/podcast_53990_power_to_the_pdcst_pdcst_starten_monetarisieren_und_zum_erfolg_fuhren_episode_812219_003_diese_4_pdcst_formate_sind_die_haufigsten_welches_wahlst_du.m4a?v=1657210689&source=webplayer",
+      "vorbis": "https://main.podigee-cdn.net/media/podcast_53990_power_to_the_pdcst_pdcst_starten_monetarisieren_und_zum_erfolg_fuhren_episode_812219_003_diese_4_pdcst_formate_sind_die_haufigsten_welches_wahlst_du.ogg?v=1657210689&source=webplayer",
+      "opus": "https://main.podigee-cdn.net/media/podcast_53990_power_to_the_pdcst_pdcst_starten_monetarisieren_und_zum_erfolg_fuhren_episode_812219_003_diese_4_pdcst_formate_sind_die_haufigsten_welches_wahlst_du.opus?v=1657210689&source=webplayer"
+    },
+    "coverUrl": "https://images.podigee-cdn.net/400x,sNw-AeI-9C1m_uMF7vB_cId37hjHz81ki4LZu1FRssL8=/https://cdn.podigee.com/uploads/u38547/515def99-8f97-491e-8bbf-d1ed40ba8716.jpg",
+    "title": "tankpool24 Podcast – Episode 1: WE POWER YOUR WAY",
+    "subtitle": "Platzhalter-Episode für die lokale Theme-Vorschau",
+    "description": "<p>Dies sind Platzhalterdaten für die lokale Vorschau des tankpool24-Themes. Ersetze <code>podcast.json</code> mit den echten Podcast- und Episodendaten, sobald der Podcast live ist.</p>",
+    "chaptermarks": [],
+    "url": "https://example.com/tankpool24-podcast/episode-1",
+    "embedCode": "<script class=\"podigee-podcast-player\"\n src=\"https://player.podigee-cdn.net/podcast-player/javascripts/podigee-podcast-player.js\"\n data-configuration=\"https://example.com/tankpool24-podcast/episode-1/embed?context=external\"></script>",
+    "transcript": null,
+    "number": 1,
+    "duration": 1649,
+    "published_at": "2026-01-01T09:00:00.000Z",
+    "updated_at": "2026-01-01T09:00:00.000Z"
+  },
+  "podcast": {
+    "feed": "https://example.com/tankpool24-podcast/feed/mp3",
+    "title": "tankpool24 Podcast",
+    "subtitle": "WE POWER YOUR WAY",
+    "description": "Der Podcast von tankpool24 rund um Tankkarten, Flottenmanagement und die Themen, die Speditionen und Fuhrparkleiter in Deutschland und Europa bewegen.",
+    "coverUrl": "https://images.podigee-cdn.net/400x,sNw-AeI-9C1m_uMF7vB_cId37hjHz81ki4LZu1FRssL8=/https://cdn.podigee.com/uploads/u38547/515def99-8f97-491e-8bbf-d1ed40ba8716.jpg",
+    "embedCode": "<script class=\"podigee-podcast-player\"\n src=\"https://player.podigee-cdn.net/podcast-player/javascripts/podigee-podcast-player.js\"\n data-configuration=\"https://example.com/tankpool24-podcast/embed?context=external\"></script>",
+    "episodes": "https://example.com/tankpool24-podcast/embed/playlist",
+    "url": "https://example.com/tankpool24-podcast/",
+    "connections": {
+      "itunes": "",
+      "spotify": "",
+      "deezer": "",
+      "google": ""
+    },
+    "language": "de"
+  },
+  "extensions": {
+    "ChapterMarks": {
+      "disabled": false
+    },
+    "Download": {
+      "disabled": false
+    },
+    "EpisodeInfo": {
+      "disabled": false
+    },
+    "Playlist": {
+      "disabled": false
+    },
+    "Share": {
+      "disabled": false
+    },
+    "Transcript": {
+      "disabled": false
+    },
+    "SubscribeBar": {
+      "disabled": false
+    }
+  },
+  "options": {
+    "theme": "tankpool24",
+    "sslProxy": "https://cdn.podigee.com/ssl-proxy/",
+    "startPanel": null,
+    "whitelabelEnabled": false,
+    "themeVersion": 2,
+    "themeCss": "http://localhost:8080/themes/tankpool24/index.css",
+    "themeHtml": "http://localhost:8080/themes/tankpool24/index.html"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "podigee-theme-tankpool24",
+  "version": "1.0.0",
+  "description": "Custom Podigee webplayer theme for the tankpool24 podcast",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "npx http-server --port 8080 --cors"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
